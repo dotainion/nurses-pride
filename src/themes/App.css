@@ -1,0 +1,67 @@
+.img-md{
+    width: 120px;
+    height: 100px;
+}
+
+.img-sm{
+    width: 120px;
+    height: 80px;
+}
+
+header .link-primary{
+    position: relative;
+}
+
+header .link-primary:hover::after, header .link-primary.active::after{
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-bottom: 2px solid var(--nurses-pride-primary);
+    animation: expandWidth 0.5s ease forwards;
+}
+
+.card.card-btn{
+    cursor: pointer;
+}
+
+.card.card-btn:hover{
+    background-color: rgb(211, 211, 211, 0.1);
+}
+
+.react-datepicker,
+.react-datepicker .react-datepicker__month-container,
+.react-datepicker .react-datepicker__header{
+    width: 100%;
+    border: none;
+}
+
+.on-hover .hover-visible{
+    visibility: hidden;
+}
+
+.on-hover:hover .hover-visible{
+    visibility: visible;
+}
+
+.wizard-nav .step{
+    width: 40px;
+    height: 40px;
+}
+
+.wizard-nav .line{
+    top: 20px;
+}
+
+@media (max-width: 575px) {
+    .wizard-nav .step{
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .wizard-nav .line{
+        top: 15px;
+    }
+}
